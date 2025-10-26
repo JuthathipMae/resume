@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume - JUTHATHIP THIPRAK</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <style>
+        * {
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background-color: #f7f7f2;
+            color: #1e1e24;
+            scroll-behavior: smooth;
+        }
+
+        /* ===== Navbar ===== */
+        .navbar {
+            background-color: #f7f7f2 !important;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .navbar-brand {
+            font-weight: 600;
+            color: #1e1e24 !important;
+        }
+
+        .nav-link {
+            color: #1e1e24 !important;
+            margin-right: 1rem;
+            transition: 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #000000 !important;
+            transform: translateY(-3px);
+        }
+
+        /* ===== Profile Section ===== */
+        .profile-pic {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #ffffff;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        hr {
+            border-top: 2px solid #1e1e24;
+            width: 60%;
+            margin: 20px auto;
+        }
+
+        /* ===== Headings ===== */
+        h1,
+        h2 {
+            font-weight: 600;
+        }
+
+        /* ===== List Styling ===== */
+        ul,
+        ol {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li,
+        ol li {
+            margin-bottom: 8px;
+        }
+
+        /* ===== Contact Section ===== */
+        #contact a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        #contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 768px) {
+            section {
+                padding: 60px 20px;
+            }
+        }
+
+        .at-icon {
+            width: 17px;
+            height: 17px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ===== Navbar ===== -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">JUTHATHIP THIPRAK</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#project">Project</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== About ===== -->
+    <section id="about" class="text-center">
+        <div class="container">
+            <img src="Profiles.jpg" alt="Profile Picture" class="profile-pic mb-3" />
+            <h1 class="fw-bold">JUTHATHIP THIPRAK</h1>
+            <em>Digital and Information Technology</em>
+            <p>Faculty of Engineering and Technology</p>
+            <p>
+                <a href="http://pim.ac.th" target="_blank">PANYAPIWAT INSTITUTE OF MANAGEMENT</a>
+            </p>
+            <hr />
+            <p class="mt-3">
+                <strong>About Me</strong><br />
+                I'm Juthathip Thiprak, a Digital and Information Technology student at Panyapiwat Institute of
+                Management. Passionate about software development and testing, I’m eager to learn new technologies and
+                apply my skills to create reliable, high-quality software solutions.
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== Education ===== -->
+    <section id="education" class="bg-light">
+        <div class="container text-center">
+            <h2 class="mb-4 fw-bold">Education</h2>
+            <hr />
+            <ul>
+                <li><strong>PANYAPIWAT INSTITUTE OF MANAGEMENT</strong></li>
+                <li>Faculty of Engineering and Technology</li>
+                <li>Major: Digital and Information Technology</li>
+                <li>GPAX: 4.00</li>
+                <li>June 2024 - Present</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ===== Experience ===== -->
+    <section id="experience">
+        <div class="container text-center">
+            <h2 class="mb-4 fw-bold">Experience</h2>
+            <hr />
+            <p><strong>CP All Public Company Limited, Thailand</strong></p>
+            <p><em>March 2025 - May 2025 | Internship at 7-Eleven</em></p>
+            <ul>
+                <li>• Cashier charge customer</li>
+                <li>• Check stock items in warehouse</li>
+                <li>• Update price tags</li>
+                <li>• Clean inside the shop</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ===== Project ===== -->
+    <section id="project" class="bg-light">
+        <div class="container text-center">
+            <h2 class="mb-4 fw-bold">Project</h2>
+            <hr />
+            <p><strong>Project:</strong> Classroom Access Registration System (IoT + Java GUI + MySQL)</p>
+            <p>
+                Developed a Java GUI connected to a MySQL Database for a check-in system, supporting both
+                username/password and RFID keycard login methods. Added an Admin module for user management, and applied
+                analytical problem-solving, debugging, and testing to ensure system accuracy and stability.
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section id="skills">
+        <div class="container text-center">
+            <h2 class="mb-4 fw-bold">Skills</h2>
+            <hr />
+            <ul class="text-start d-inline-block">
+                <li><strong>Programming Languages:</strong> Java, HTML, CSS</li>
+                <li><strong>Database Management:</strong> MySQL</li>
+                <li><strong>Software Tools:</strong> NetBeans, Visual Studio Code, GitHub</li>
+                <li><strong>Soft Skills:</strong> Problem Solving, Teamwork, Analytical Thinking, Attention to Detail
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+    <!-- ===== Contact ===== -->
+    <section id="contact" class="bg-light">
+        <div class="container text-center">
+            <h2 class="mb-4 fw-bold">Contact</h2>
+            <hr />
+            <ol class="text-start d-inline-block">
+                <li>
+                    <strong>Email:</strong> 6752100551<span><img src="at.png" alt="@"
+                            class="at-icon"></span>stu.pim.ac.th
+                </li>
+                <li><strong>Tel:</strong> 099-999-8998</li>
+                <li>
+                    <strong>GitHub:</strong>
+                    <a href="https://github.com/JuthathipMae" target="_blank">github.com/JuthathipMae</a>
+                </li>
+                <li><strong>Address:</strong> 123/45 Example Road, Bangkok, Thailand</li>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/example"
+                        target="_blank">linkedin.com/in/example</a></li>
+                
+            </ol>
+        </div>
+    </section>
+
+
+    <script src="bootstrap.min.js"></script>
+</body>
+
+</html>
